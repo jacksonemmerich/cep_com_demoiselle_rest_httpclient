@@ -13,8 +13,13 @@ public class EnderecoBC extends DelegateCrud<Endereco, Long, EnderecoDAO> {
 	private static final long serialVersionUID = 1L;
 	
 	
+	
+	
 	// delega pro DAO o metodo que busca o endereço
-	public Endereco getBuscaEndPorCEP(String cep){
+	public Endereco getBuscaEndPorCEP(String cep) {
 		return getDelegate().getBuscaEndPorCEP(cep);
 	}
+	
+	
+	
 }
